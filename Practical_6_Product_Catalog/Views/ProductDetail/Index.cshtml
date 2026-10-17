@@ -1,0 +1,50 @@
+﻿@model List<P6_Product_Catalog.Models.ProductDetails>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Product Catalog</title>
+</head>
+
+<body>
+
+    <h2>Product Catalog</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.ProductId</td>
+                <td>@i.ProductName</td>
+                <td>@i.ProductCategory</td>
+
+                <td>
+                    @Html.ActionLink(
+                             "View Product",
+                             "ProductDetail",
+                             "ProductDetail",
+                             new { id = i.ProductId },
+                             null
+                         )
+                </td>
+            </tr>
+        }
+
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿@model P6_Product_Catalog.Models.ProductDetails
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Product Details</title>
+</head>
+<body>
+    <h2>Product Details</h2>
+
+    <img src="@Model.ProductImageUrl" width="150" height="150" />
+
+    <br />
+    <h3>@Model.ProductName</h3>
+    <p>Product ID : @Model.ProductId</p>
+    <p>Category : @Model.ProductCategory</p>
+    <p>Price : @Model.ProductPrice</p>
+
+    @Html.ActionLink("Back to Home Page", "Index", "ProductDetail")
+</body>
+</html>
