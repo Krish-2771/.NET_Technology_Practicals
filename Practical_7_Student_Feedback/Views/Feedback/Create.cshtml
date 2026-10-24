@@ -1,0 +1,63 @@
+﻿
+@model P7_Student_Feedback.Models.Feedback
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Feedback</title>
+</head>
+<body>
+    <h2>Create Feedback</h2>
+
+    @using (Html.BeginForm("Create", "Feedback", FormMethod.Post))
+    {
+        @Html.ValidationSummary(false)
+
+        <div>
+            @Html.LabelFor(v => v.EnrollmentNo)
+            @Html.TextBoxFor(v => v.EnrollmentNo)
+            @Html.ValidationMessageFor(v => v.EnrollmentNo)
+        </div>
+        <br />
+
+        <div>
+            @Html.LabelFor(v => v.Name)
+            @Html.TextBoxFor(v => v.Name)
+            @Html.ValidationMessageFor(v => v.Name)
+        </div>
+        <br />
+
+        <div>
+            @Html.LabelFor(v => v.Subject)
+            @Html.TextBoxFor(v => v.Subject)
+            @Html.ValidationMessageFor(v => v.Subject)
+        </div>
+        <br />
+
+        <div>
+            @Html.LabelFor(v => v.Rating)
+            @Html.TextBoxFor(v => v.Rating)
+            @Html.ValidationMessageFor(v => v.Rating)
+        </div>
+        <br />
+
+        <div>
+            @Html.LabelFor(v => v.Comments)
+            @Html.TextAreaFor(v => v.Comments)
+            @Html.ValidationMessageFor(v => v.Comments)
+        </div>
+        <br />
+
+        <input type="submit" value="Submit" />
+    }
+
+    <script src="~/Scripts/jquery-3.7.0.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
