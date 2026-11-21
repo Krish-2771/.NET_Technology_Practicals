@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b7bff"/>
+      <stop offset="1" stop-color="#14306b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe083"/>
+      <stop offset="1" stop-color="#f5a623"/>
+    </linearGradient>
+  </defs>
+  <!-- rounded badge -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)"/>
+  <!-- graduation cap -->
+  <polygon points="32,12 58,24 32,36 6,24" fill="#ffffff"/>
+  <path d="M16 31 v10 c0 4 7 8 16 8 s16 -4 16 -8 v-10 l-16 7.5 z" fill="#dbe7ff"/>
+  <!-- tassel -->
+  <line x1="55" y1="25.5" x2="55" y2="40" stroke="url(#gold)" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="55" cy="43" r="3" fill="url(#gold)"/>
+  <!-- registration check badge -->
+  <circle cx="46" cy="49" r="11" fill="#22c55e" stroke="#ffffff" stroke-width="2.5"/>
+  <path d="M40.5 49.5 l4 4 l7 -8" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
