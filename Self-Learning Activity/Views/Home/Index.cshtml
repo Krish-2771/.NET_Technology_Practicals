@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero">
+    <img src="~/images/logo.svg" alt="Student Course Registration logo" class="hero-logo" />
+    <h1>Student Course Registration System</h1>
+    <p>
+        Register for your course in a few clicks, browse every enrolled student and
+        view complete details, all in one place.
+    </p>
+    <div class="actions">
+        <a class="btn" asp-controller="Student" asp-action="Create">Register a Student</a>
+        <a class="btn btn-secondary" asp-controller="Student" asp-action="Index">View Student List</a>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Student Course Registration</title>
+    <link rel="icon" type="image/svg+xml" href="~/images/logo.svg" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="brand" asp-controller="Home" asp-action="Index"><img src="~/images/logo.svg" alt="Logo" class="logo" />
+                <span>Course<b>Reg</b></span></a>
+            <div class="links">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+                <a asp-controller="Student" asp-action="Index">Student List</a>
+                <a asp-controller="Student" asp-action="Create">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>Krish Kothari (92400103518) * 5EC1 * .NET Self-Learning Activity </p>
+    </footer>
+</body>
+</html>
